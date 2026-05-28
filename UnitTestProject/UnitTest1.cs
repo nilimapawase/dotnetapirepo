@@ -11,7 +11,7 @@ namespace UnitTestProject
         {
             var factory = new WebApplicationFactory<Program>();
             var client=factory.CreateClient();
-            var response = await client.GetAsync("/api/allstates");
+            var response = await client.GetAsync("/api/states");
             //Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.Equal(200, (int)response.StatusCode);
         }
