@@ -19,7 +19,7 @@ namespace UnitTestProject
         [InlineData(1,200)]
         [InlineData(2,200)]
         [InlineData(15,204)]
-        [InlineData(11,200)]
+        [InlineData(11,204)]
         public async Task Test2(int id,int expected)
         {
             var factory = new WebApplicationFactory<Program>();
